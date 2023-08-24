@@ -1,0 +1,9 @@
+#Accès Base de donnée
+BDD:
+  host:
+  database:
+  username:
+  password:
+
+#Information arena
+Arena:

@@ -15,9 +15,11 @@ public class CommandList implements CommandExecutor {
                 if (strings.length == 1) {
                     if (strings[0].equals("PlayerInDuel")) {
                         player.sendMessage(Main.getInstance().getPlayerInDuel().toString());
-                    } else if (strings[0].equals("RequestTestAhix")) {
-                        player.sendMessage(Main.getInstance().getRequestTestAhix().toString());
-                    } else {
+                    } else if (strings[0].equals("DuelRequest")) {
+                        player.sendMessage(Main.getInstance().getDuelRequest().toString());
+                    } else if (strings[0].equals("ArenaManager")) {
+                    player.sendMessage(Main.getInstance().getArenaManager().toString());
+                }else {
                         player.sendMessage("Liste inconnu");
                     }
 
