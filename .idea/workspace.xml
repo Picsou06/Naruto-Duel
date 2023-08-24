@@ -4,32 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba40a215-f56c-48b4-972a-452701c0ea6e" name="Changes" comment="Base du projet, V1 request duel">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandReloadConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/list/ArenaManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+    <list default="true" id="ba40a215-f56c-48b4-972a-452701c0ea6e" name="Changes" comment="Config.yml fonctionnel, request v1.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandCreateDuel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandGetWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/OLDCommandDuel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/listener/Player/ListAskDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/list/ListAskDuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/listener/Player/PlayerInDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/list/PlayerInDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuels.java" afterDir="false" />
     </list>
     <list id="17337f0f-7759-4217-8f4c-8e69e09db3a8" name="Changes by Ahix" comment="">
       <change beforePath="$PROJECT_DIR$/server/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/spigot.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" afterDir="false" />
     </list>
     <list id="181dfcba-b150-47ad-b3d9-fac5559d4f73" name="Changes by loulo" comment="Changes by loulo" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +48,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java">
+      <ranges>
+        <range start1="25" end1="26" start2="25" end2="30" changelist="17337f0f-7759-4217-8f4c-8e69e09db3a8" />
+        <range start1="34" end1="47" start2="38" end2="54" changelist="ba40a215-f56c-48b4-972a-452701c0ea6e" />
+        <range start1="48" end1="63" start2="55" end2="70" changelist="ba40a215-f56c-48b4-972a-452701c0ea6e" />
+        <range start1="64" end1="65" start2="71" end2="71" changelist="ba40a215-f56c-48b4-972a-452701c0ea6e" />
+        <range start1="66" end1="70" start2="72" end2="74" changelist="ba40a215-f56c-48b4-972a-452701c0ea6e" />
+      </ranges>
+    </file>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -178,13 +171,22 @@
       <option name="project" value="LOCAL" />
       <updated>1692815125403</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Config.yml fonctionnel, request v1.5">
+      <option name="closed" value="true" />
+      <created>1692916380550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692916380550</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Base du projet, V1 request duel" />
     <MESSAGE value="Changes by loulo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by loulo" />
+    <MESSAGE value="Config.yml fonctionnel, request v1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config.yml fonctionnel, request v1.5" />
   </component>
 </project>

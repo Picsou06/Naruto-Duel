@@ -26,6 +26,7 @@ public class CommandDuels implements CommandExecutor {
                         config.set("arena."+strings[1]+".open", false);
                             player.sendMessage(ChatColor.GREEN + "L'arène à bien été crée !");
                             Main.getInstance().saveConfig();
+                            return false;
                     }
                     if (strings[0].equals("delete")) {
                         if (config.contains("arena." + strings[1])) {

@@ -32,38 +32,39 @@ public class CommandDuel implements CommandExecutor {
                     return false;
                 }
             }
-                if (strings[0].equals("accept")) {
+            if (strings[0].equals("accept")) {
+                if (Main.getInstance().getDuelRequest().containsKey(p)) {
+                    Player opponent = Main.getInstance().getDuelRequest().get(p);
+                    if (Bukkit.getOnlinePlayers().contains(opponent)) {
+                        //Commande de duel (Tp, Creation du Monde, Kits, Panel...)
+                        Bukkit.broadcastMessage(ChatColor.AQUA + "Téléportation en cours!");
+                        Main.getInstance().getDuelRequest().remove(p);
+                        return false;
+                    } else {
+                        p.sendMessage(ChatColor.RED + "Ce joueur n'est plus en ligne");
+                        return false;
+                    }
+                } else {
+                    p.sendMessage(ChatColor.RED + "Vous n'avez pas de demande de duel");
+                    return false;
+                }
+
+            }
+                if (strings[0].equals("deny")) {
                     if (Main.getInstance().getDuelRequest().containsKey(p)) {
                         Player opponent = Main.getInstance().getDuelRequest().get(p);
                         if (Bukkit.getOnlinePlayers().contains(opponent)) {
-                            //Commande de duel (Tp, Creation du Monde, Kits, Panel...)
-                            Bukkit.broadcastMessage(ChatColor.AQUA + "Téléportation en cours!");
+                            opponent.sendMessage(ChatColor.GRAY + p.getName() + ChatColor.RED + " a refusé votre demande");
                             Main.getInstance().getDuelRequest().remove(p);
+                            return false;
                         } else {
                             p.sendMessage(ChatColor.RED + "Ce joueur n'est plus en ligne");
+                            return false;
                         }
                     } else {
                         p.sendMessage(ChatColor.RED + "Vous n'avez pas de demande de duel");
+                        return false;
                     }
-
-                } else {
-                    if (strings[0].equals("deny")) {
-                        if (Main.getInstance().getDuelRequest().containsKey(p)) {
-                            Player opponent = Main.getInstance().getDuelRequest().get(p);
-                            if (Bukkit.getOnlinePlayers().contains(opponent)) {
-                                opponent.sendMessage(ChatColor.GRAY + p.getName() + ChatColor.RED + " a refusé votre demande");
-                                Main.getInstance().getDuelRequest().remove(p);
-                            } else {
-                                p.sendMessage(ChatColor.RED + "Ce joueur n'est plus en ligne");
-                            }
-                        } else {
-                            p.sendMessage(ChatColor.RED + "Vous n'avez pas de demande de duel");
-                        }
-                    } else {
-                        p.sendMessage(ChatColor.RED + strings[0] + " n'est pas connecté");
-                    }
-                }
             }
-        return false;
-    }
-    }
+        }return false;
+    }}
