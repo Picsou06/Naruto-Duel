@@ -4,6 +4,9 @@ import fr.picsou.narutoduel.components.commands.*;
 import fr.picsou.narutoduel.components.list.ArenaManager;
 import fr.picsou.narutoduel.components.listener.ListenerManager;
 import fr.picsou.narutoduel.utils.Commands.SimpleCommand;
+import org.bukkit.Bukkit;
+import org.bukkit.World;
+import org.bukkit.WorldCreator;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.craftbukkit.v1_19_R3.CraftServer;
@@ -30,8 +33,14 @@ public class Main extends JavaPlugin {
         System.out.println("[Naruto Duel] ON");
         createCommand(new SimpleCommand("list", "", new CommandList()));
         createCommand(new SimpleCommand("duel", "", new CommandDuel()));
-        createCommand(new SimpleCommand("reloadConfig", "", new CommandReloadConfig()));
         createCommand(new SimpleCommand("duels", "", new CommandDuels()));
+        createCommand(new SimpleCommand("gm", "", new CommandGm()));
+        createCommand(new SimpleCommand("heal", "", new CommandHeal()));
+        for (int i = 1; i < 10; i++){
+            WorldCreator wc = new WorldCreator("Arene"+String.valueOf(i));
+            wc.createWorld();
+            Bukkit.broadcastMessage("Et de "+String.valueOf(i));
+        }
         new ListenerManager(this);
     }
 
@@ -93,9 +102,8 @@ public class Main extends JavaPlugin {
         }
     }
 
-
-
     public static Main getInstance() {
         return instance;
     }
-}
+    }
+

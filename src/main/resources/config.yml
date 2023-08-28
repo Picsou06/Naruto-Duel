@@ -5,5 +5,23 @@ BDD:
   username:
   password:
 
-#Information arena
-Arena:
+#Information zone
+ZONE:
+  cerveau:
+    open: false
+  CorpsDeKaguya:
+    open: false
+  crevasse_mortelle:
+    open: false
+  Hyoton:
+    open: false
+  Kamui:
+    open: false
+  Okasa:
+    open: false
+  Shiki_Fujin:
+    open: false
+  sphere_dinsecte:
+    open: false
+  tombe:
+    open: false
