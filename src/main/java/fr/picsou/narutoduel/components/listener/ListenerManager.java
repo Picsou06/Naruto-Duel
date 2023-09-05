@@ -1,5 +1,7 @@
 package fr.picsou.narutoduel.components.listener;
 
+import fr.picsou.narutoduel.components.Gui.GuiManager;
+import fr.picsou.narutoduel.components.listener.Player.DeathPlayerListener;
 import fr.picsou.narutoduel.components.listener.Player.JoinPlayerListener;
 import fr.picsou.narutoduel.components.listener.Player.LeavePlayerListener;
 import fr.picsou.narutoduel.components.listener.interact.ClickListener;
@@ -11,5 +13,7 @@ public class ListenerManager {
         plugin.getServer().getPluginManager().registerEvents(new JoinPlayerListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new LeavePlayerListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new ClickListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new DeathPlayerListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new GuiManager(), plugin);
     }
 }

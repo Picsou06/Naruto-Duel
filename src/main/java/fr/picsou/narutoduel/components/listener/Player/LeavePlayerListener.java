@@ -13,5 +13,6 @@ public class LeavePlayerListener implements Listener {
     public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
         Main.getInstance().getPlayerInDuel().remove(player);
+
     }
 }

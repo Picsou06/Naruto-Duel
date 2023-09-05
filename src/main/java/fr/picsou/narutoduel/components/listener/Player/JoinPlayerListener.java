@@ -15,7 +15,8 @@ public class JoinPlayerListener implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event){
         Main pluginInstance = Main.getInstance();
         if (pluginInstance != null) {
-            Player player = event.getPlayer();            player.teleport(new Location(Bukkit.getWorld("world"), -6.50, 88, -1.50));
+            Player player = event.getPlayer();
+            player.teleport(new Location(Bukkit.getWorld("world"), -6.50, 88, -1.50));
         } else {
         }
     }

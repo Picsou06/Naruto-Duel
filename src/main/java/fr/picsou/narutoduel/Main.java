@@ -1,5 +1,8 @@
 package fr.picsou.narutoduel;
 
+import fr.picsou.narutoduel.components.Gui.GuiBuilder;
+import fr.picsou.narutoduel.components.Gui.GuiManager;
+import fr.picsou.narutoduel.components.Items.ItemManager;
 import fr.picsou.narutoduel.components.commands.*;
 import fr.picsou.narutoduel.components.list.ArenaManager;
 import fr.picsou.narutoduel.components.listener.ListenerManager;
@@ -16,11 +19,14 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main extends JavaPlugin {
     private static Main instance;
 
     private List<fr.picsou.narutoduel.components.list.PlayerInDuel> PlayerInDuel = new ArrayList<>();
+
+    private Map<Class<? extends GuiBuilder>, GuiBuilder> registeredMenus = new HashMap<>();
 
     private List<ArenaManager> ArenaManager = new ArrayList<>();
 
@@ -28,20 +34,23 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable(){
+
         saveDefaultConfig();
         instance = this;
         System.out.println("[Naruto Duel] ON");
         createCommand(new SimpleCommand("list", "", new CommandList()));
+        createCommand(new SimpleCommand("test", "", new CommandTest()));
         createCommand(new SimpleCommand("duel", "", new CommandDuel()));
         createCommand(new SimpleCommand("duels", "", new CommandDuels()));
         createCommand(new SimpleCommand("gm", "", new CommandGm()));
         createCommand(new SimpleCommand("heal", "", new CommandHeal()));
-        for (int i = 1; i < 10; i++){
+        createCommand(new SimpleCommand("mvtp", "", new CommandWorldTeleport()));
+        for (int i = 1; i < getConfig().getInt("Nombre.MAPS"); i++){
             WorldCreator wc = new WorldCreator("Arene"+String.valueOf(i));
             wc.createWorld();
-            Bukkit.broadcastMessage("Et de "+String.valueOf(i));
         }
         new ListenerManager(this);
+        new ItemManager();
     }
 
     @Override
@@ -64,7 +73,7 @@ public class Main extends JavaPlugin {
         return DuelRequest;
     }
 
-    private void loadArenasFromConfig() {
+    /*private void loadArenasFromConfig() {
         FileConfiguration config = getConfig();
         if (config.contains("arena")) {
             ConfigurationSection arenasSection = config.getConfigurationSection("arena");
@@ -100,7 +109,12 @@ public class Main extends JavaPlugin {
                 }
             }
         }
+    }*/
+
+    public Map<Class<? extends GuiBuilder>, GuiBuilder> getRegisteredMenus() {
+        return registeredMenus;
     }
+
 
     public static Main getInstance() {
         return instance;
