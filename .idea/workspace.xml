@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba40a215-f56c-48b4-972a-452701c0ea6e" name="Changes" comment="Mise a jour GUI">
+      <change afterPath="$PROJECT_DIR$/server/crash-reports/crash-2023-09-05_21.02.40-server.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-08-26-3.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-08-28-1.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-08-29-1.log.gz" afterDir="false" />
@@ -17,8 +18,20 @@
       <change afterPath="$PROJECT_DIR$/server/logs/2023-09-04-5.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-09-04-6.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-09-04-7.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/listener/Player/LeavePlayerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/listener/Player/LeavePlayerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/rôle/Naruto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/rôle/Naruto.java" afterDir="false" />
     </list>
     <list id="17337f0f-7759-4217-8f4c-8e69e09db3a8" name="Changes by Ahix" comment="">
       <change beforePath="$PROJECT_DIR$/server/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/spigot.yml" afterDir="false" />
@@ -123,7 +136,7 @@
       <command value="glasscode" />
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.spigot-1.19.4.jar">
+  <component name="RunManager" selected="Gradle.Naruto_Duel [build]">
     <configuration name="Naruto_Duel [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -211,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693939860235</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Mise a jour GUI">
+      <option name="closed" value="true" />
+      <created>1693939904968</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693939904968</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

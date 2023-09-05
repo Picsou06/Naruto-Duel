@@ -5,6 +5,7 @@ import fr.picsou.narutoduel.components.Gui.GuiBuilder;
 import fr.picsou.narutoduel.components.Gui.GuiManager;
 import fr.picsou.narutoduel.components.Items.ItemBuilder;
 import fr.picsou.narutoduel.components.list.PlayerInDuel;
+import fr.picsou.narutoduel.components.rôle.Naruto;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
@@ -98,6 +99,7 @@ public class CommandDuel implements CommandExecutor {
                         ArmorLeggings.setEnchant(Enchantment.PROTECTION_ENVIRONMENTAL,2);
                         ItemBuilder ArmorBoots = new ItemBuilder(Material.DIAMOND_BOOTS);
                         ArmorBoots.setEnchant(Enchantment.PROTECTION_ENVIRONMENTAL,2);
+                        player.getInventory().setItem(17, new ItemStack(Material.ARROW, 10));
                         player.getInventory().setItem(0, new ItemStack(classicsword.toItemStack()));
                         player.getInventory().setItem(8, new ItemStack(RDS.toItemStack()));
                         for (int i = 1; i < 3; i++){
@@ -110,6 +112,7 @@ public class CommandDuel implements CommandExecutor {
 
                         opponent.getInventory().setItem(0, new ItemStack(classicsword.toItemStack()));
                         opponent.getInventory().setItem(8, new ItemStack(RDS.toItemStack()));
+                        opponent.getInventory().setItem(17, new ItemStack(Material.ARROW, 10));
                         for (int i = 1; i < 3; i++){
                             opponent.getInventory().addItem(RDS.toItemStack());
                         }
@@ -117,6 +120,11 @@ public class CommandDuel implements CommandExecutor {
                         opponent.getInventory().setChestplate(ArmorChestplate.toItemStack());
                         opponent.getInventory().setLeggings(ArmorLeggings.toItemStack());
                         opponent.getInventory().setBoots(ArmorBoots.toItemStack());
+                        GuiBuilder RoleGUI = new RoleGUI();
+                        GuiManager guiManager = new GuiManager();
+                        guiManager.addMenu(RoleGUI);
+                        guiManager.open(player, CommandDuel.RoleGUI.class);
+                        guiManager.open(opponent, CommandDuel.RoleGUI.class);
 
                         return false;
                     } else {
@@ -167,6 +175,34 @@ public class CommandDuel implements CommandExecutor {
         int maxWidth = 80;
         int spaces = (int) Math.round((maxWidth - text.length()) / 2);
         return StringUtils.repeat(" ", spaces) + text;
+    }
+
+    private static class RoleGUI implements GuiBuilder{
+
+        @Override
+        public String name(Player player) {
+            return "Rôle:";
+        }
+
+        @Override
+        public int getSize() {
+            return 27;
+        }
+
+        @Override
+        public void contents(Player player, Inventory inv) throws Exception {
+            Naruto naruto = new Naruto();
+            inv.setItem(0, naruto.gethead());
+        }
+
+        @Override
+        public void onClick(Player player, Inventory inv, ItemStack current, int slot, ClickType action) {
+            Naruto naruto = new Naruto();
+            if(slot == 0) {
+                naruto.setrole(player);
+                player.closeInventory();
+            }
+        }
     }
 
     private static class DuelGUI implements GuiBuilder {
