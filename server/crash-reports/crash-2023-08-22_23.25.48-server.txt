@@ -1,0 +1,110 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 2023-08-22 23:25:48
+Description: Exception ticking world
+
+java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
+	at org.spigotmc.ActivationRange.activateEntities(ActivationRange.java:121)
+	at net.minecraft.server.level.WorldServer.a(WorldServer.java:403)
+	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1304)
+	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:388)
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1200)
+	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1017)
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:304)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
+	at org.spigotmc.ActivationRange.activateEntities(ActivationRange.java:121)
+	at net.minecraft.server.level.WorldServer.a(WorldServer.java:403)
+
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: 2401
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-7,88,-2), Section: (at 9,8,14 in -1,5,-1; chunk contains blocks -16,-64,-16 to -1,319,-1), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Level time: 468062 game time, 1064 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 4804 (now: false), thunder time: 63153 (now: false)
+	Known server brands: Spigot
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1304)
+	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:388)
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1200)
+	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1017)
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:304)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.4
+	Minecraft Version ID: 1.19.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.7, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 1005785632 bytes (959 MiB) / 3057647616 bytes (2916 MiB) up to 6429868032 bytes (6132 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 2600 Six-Core Processor            
+	Identifier: AuthenticAMD Family 23 Model 8 Stepping 2
+	Microarchitecture: Zen+
+	Frequency (GHz): 3.40
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Virtual Desktop Monitor
+	Graphics card #0 vendor: Virtual Desktop, Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=15.39.56.845
+	Graphics card #1 name: NVIDIA GeForce GTX 1050
+	Graphics card #1 vendor: NVIDIA (0x10de)
+	Graphics card #1 VRAM (MB): 2048.00
+	Graphics card #1 deviceId: 0x1c81
+	Graphics card #1 versionInfo: DriverVersion=31.0.15.3699
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MB): 4096.00
+	Memory slot #2 clockSpeed (GHz): 2.40
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.40
+	Memory slot #3 type: DDR4
+	Virtual memory max (MB): 32206.58
+	Virtual memory used (MB): 28280.52
+	Swap memory total (MB): 7680.00
+	Swap memory used (MB): 604.78
+	JVM Flags: 0 total; 
+	CraftBukkit Information: 
+   Running: CraftBukkit version 3763-Spigot-7d7b241-5a5e43e (MC: 1.19.4) (Implementing API version 1.19.4-R0.1-SNAPSHOT) true
+   Plugins: { WorldEdit v7.2.14+6360-094b734 com.sk89q.worldedit.bukkit.WorldEditPlugin [EngineHub], Naruto_Duel v1.0 fr.picsou.narutoduel.Main [picsou],}
+   Warnings: DEFAULT
+   Reload Count: 1
+   Threads: { TIMED_WAITING bStats-Metrics: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672), java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182), java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], WAITING JNA Cleaner: [java.base@17.0.7/java.lang.Object.wait(Native Method), java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155), java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176), com.sun.jna.internal.Cleaner$1.run(Cleaner.java:58)], WAITING TerminalConsoleWriter: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506), java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463), java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434), java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623), java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435), com.mojang.logging.LogQueues.getNextLogEvent(LogQueues.java:41), org.bukkit.craftbukkit.v1_19_R3.util.TerminalConsoleWriterThread.run(TerminalConsoleWriterThread.java:31)], TIMED_WAITING IO-Worker-17: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@17.0.7/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@17.0.7/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], WAITING SIGINT handler: [java.base@17.0.7/java.lang.Object.wait(Native Method), java.base@17.0.7/java.lang.Thread.join(Thread.java:1304), java.base@17.0.7/java.lang.Thread.join(Thread.java:1372), java.base@17.0.7/java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107), java.base@17.0.7/java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46), java.base@17.0.7/java.lang.Shutdown.runHooks(Shutdown.java:130), java.base@17.0.7/java.lang.Shutdown.exit(Shutdown.java:173), java.base@17.0.7/java.lang.Terminator$1.handle(Terminator.java:51), java.base@17.0.7/jdk.internal.misc.Signal$1.run(Signal.java:219), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], WAITING Worker-Main-10: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE Attach Listener: [], TIMED_WAITING IO-Worker-18: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@17.0.7/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@17.0.7/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], RUNNABLE Netty Server IO #1: [java.base@17.0.7/sun.nio.ch.WEPoll.wait(Native Method), java.base@17.0.7/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111), java.base@17.0.7/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129), java.base@17.0.7/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146), io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68), io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526), io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997), io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], WAITING Worker-Main-2: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE Notification Thread: [], TIMED_WAITING Timer hack thread: [java.base@17.0.7/java.lang.Thread.sleep(Native Method), net.minecraft.SystemUtils$9.run(SourceFile:822)], TIMED_WAITING Spigot Watchdog Thread: [java.base@17.0.7/java.lang.Thread.sleep(Native Method), org.spigotmc.WatchdogThread.run(WatchdogThread.java:106)], TIMED_WAITING Async Chat Thread - #1: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@17.0.7/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@17.0.7/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], WAITING Worker-Main-5: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], WAITING Worker-Main-11: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], TIMED_WAITING Spigot Metrics Thread: [java.base@17.0.7/java.lang.Object.wait(Native Method), java.base@17.0.7/java.util.TimerThread.mainLoop(Timer.java:563), java.base@17.0.7/java.util.TimerThread.run(Timer.java:516)], TIMED_WAITING Common-Cleaner: [java.base@17.0.7/java.lang.Object.wait(Native Method), java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155), java.base@17.0.7/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140), java.base@17.0.7/java.lang.Thread.run(Thread.java:833), java.base@17.0.7/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)], RUNNABLE Thread-1: [it.unimi.dsi.fastutil.longs.Long2ByteOpenHashMap.get(Long2ByteOpenHashMap.java:367), net.minecraft.server.level.ChunkMapDistance$b.c(ChunkMapDistance.java:496), net.minecraft.world.level.lighting.LightEngineGraph.b(SourceFile:183), net.minecraft.server.level.ChunkMap.a(SourceFile:27), net.minecraft.world.level.lighting.LightEngineGraph.b(SourceFile:221), net.minecraft.server.level.ChunkMapDistance$b.a(ChunkMapDistance.java:526), net.minecraft.server.level.ChunkMapDistance$c.a(ChunkMapDistance.java:623), net.minecraft.server.level.ChunkMapDistance.a(ChunkMapDistance.java:120), net.minecraft.server.level.ChunkProviderServer.s(ChunkProviderServer.java:320), net.minecraft.server.level.ChunkProviderServer.a(ChunkProviderServer.java:382), net.minecraft.server.MinecraftServer.t(MinecraftServer.java:903), net.minecraft.server.dedicated.DedicatedServer.t(DedicatedServer.java:686), net.minecraft.server.MinecraftServer.close(MinecraftServer.java:840), org.bukkit.craftbukkit.v1_19_R3.util.ServerShutdownThread.run(ServerShutdownThread.java:16)], RUNNABLE Reference Handler: [java.base@17.0.7/java.lang.ref.Reference.waitForReferencePendingList(Native Method), java.base@17.0.7/java.lang.ref.Reference.processPendingReferences(Reference.java:253), java.base@17.0.7/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)], RUNNABLE Signal Dispatcher: [], RUNNABLE Netty Server IO #0: [java.base@17.0.7/sun.nio.ch.WEPoll.wait(Native Method), java.base@17.0.7/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111), java.base@17.0.7/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129), java.base@17.0.7/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146), io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68), io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526), io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997), io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], TIMED_WAITING Async Chat Thread - #2: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@17.0.7/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@17.0.7/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], RUNNABLE Netty Server IO #2: [java.base@17.0.7/sun.nio.ch.WEPoll.wait(Native Method), java.base@17.0.7/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111), java.base@17.0.7/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129), java.base@17.0.7/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146), io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68), io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526), io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997), io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)], WAITING Finalizer: [java.base@17.0.7/java.lang.Object.wait(Native Method), java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155), java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176), java.base@17.0.7/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)], WAITING Worker-Main-7: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], TIMED_WAITING Worker-Main-9: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE Server console handler: [java.base@17.0.7/java.io.FileInputStream.readBytes(Native Method), java.base@17.0.7/java.io.FileInputStream.read(FileInputStream.java:276), java.base@17.0.7/java.io.BufferedInputStream.fill(BufferedInputStream.java:244), java.base@17.0.7/java.io.BufferedInputStream.read(BufferedInputStream.java:263), jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:248), jline.internal.InputStreamReader.read(InputStreamReader.java:261), jline.internal.InputStreamReader.read(InputStreamReader.java:198), jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145), jline.console.ConsoleReader.readLineSimple(ConsoleReader.java:3183), jline.console.ConsoleReader.readLine(ConsoleReader.java:2333), jline.console.ConsoleReader.readLine(ConsoleReader.java:2269), jline.console.ConsoleReader.readLine(ConsoleReader.java:2257), net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:119)], WAITING Worker-Main-3: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], WAITING Worker-Main-1: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], WAITING Worker-Main-4: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE DestroyJavaVM: [], TIMED_WAITING Worker-Main-6: [java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method), java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410), java.base@17.0.7/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726), java.base@17.0.7/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@17.0.7/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE Server thread: [java.base@17.0.7/java.lang.Thread.dumpThreads(Native Method), java.base@17.0.7/java.lang.Thread.getAllStackTraces(Thread.java:1662), org.bukkit.craftbukkit.v1_19_R3.CraftCrashReport.get(CraftCrashReport.java:33), org.bukkit.craftbukkit.v1_19_R3.CraftCrashReport.get(CraftCrashReport.java:1), net.minecraft.SystemReport.a(SourceFile:66), net.minecraft.CrashReport.<init>(CrashReport.java:37), net.minecraft.CrashReport.a(CrashReport.java:242), net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1310), net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:388), net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1200), net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1017), net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:304), net.minecraft.server.MinecraftServer$$Lambda$4554/0x00000008018ca338.run(Unknown Source), java.base@17.0.7/java.lang.Thread.run(Thread.java:833)],}
+   Recent tasks from 4606-4636{}
+   Force Loaded Chunks: { world: {}, world_the_end: {},}
+	Server Running: true
+	Player Count: 0 / 20; []
+	Data Packs: vanilla, file/bukkit
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'Spigot'
+	Type: Dedicated Server (map_server.txt)

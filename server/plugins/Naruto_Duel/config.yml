@@ -1,0 +1,129 @@
+# Accès Base de donnée
+BDD:
+  host: ''
+  database: ''
+  username: ''
+  password: ''
+
+# Information zone
+ZONE:
+  arene:
+    open: false
+    x1: 32.5
+    y1: 21.0
+    z1: 53.5
+    yaw1: -90.0
+    pitch1: 0.0
+    x2: 74.5
+    y2: 21.0
+    z2: 53.5
+    yaw2: 90.0
+    pitch2: 0.0
+  cerveau:
+    open: true
+    x1: 147.5
+    y1: 2.0
+    z1: 53.5
+    yaw1: 0.0
+    pitch1: 0.0
+    x2: 146.5
+    y2: 2.0
+    z2: 57.5
+    yaw2: -180.0
+    pitch2: 0.0
+  CorpsDeKaguya:
+    open: true
+    x1: 95.5
+    y1: 5.0
+    z1: 106.5
+    yaw1: -45.0
+    pitch1: 0.0
+    x2: 106.5
+    y2: 5.0
+    z2: 118.5
+    yaw2: 137.5
+    pitch2: 0.0
+  crevasse_mortelle:
+    open: true
+    x1: 134.5
+    y1: 28.0
+    z1: -37.5
+    yaw1: 0.0
+    pitch1: 35.0
+    x2: 134.5
+    y2: -1.0
+    z2: 2.5
+    yaw2: -180.0
+    pitch2: 0.0
+  Hyoton:
+    open: true
+    x2: 133.5
+    y2: 2.0
+    z2: 205.5
+    yaw2: 0.0
+    pitch2: 0.0
+    x1: 133.5
+    y1: 3.0
+    z1: 210.5
+    yaw1: -180.0
+    pitch1: 10.0
+  Kamui:
+    open: true
+    x1: 44.5
+    y1: 12.0
+    z1: 183.5
+    yaw1: 0.0
+    pitch1: 0.0
+    x2: 44.5
+    y2: 9.0
+    z2: 165.5
+    yaw2: 0.0
+    pitch2: 0.0
+  Okasa:
+    open: true
+    x2: -94.30000000000001
+    y2: 7.0
+    z2: 184.5
+    yaw2: 0.0
+    pitch2: 10.0
+    x1: -94.5
+    y1: 7.0
+    z1: 188.5
+    yaw1: -180.0
+    pitch1: 0.0
+  Shiki_Fujin:
+    open: true
+    x1: -14.5
+    y1: 5.0
+    z1: 123.5
+    yaw1: 90.0
+    pitch1: 0.0
+    x2: -19.5
+    y2: 5.0
+    z2: 123.5
+    yaw2: -90.0
+    pitch2: 0.0
+  sphere_dinsecte:
+    open: false
+    x1: -100.5
+    y1: 0.0
+    z1: 107.5
+    yaw1: -90.0
+    pitch1: 0.0
+    x2: -84.5
+    y2: 0.0
+    z2: 107.5
+    yaw2: 90.0
+    pitch2: 0.0
+  tombe:
+    open: false
+    x2: -37.15
+    y2: 11.0
+    z2: 126.5
+    yaw2: 90.0
+    pitch2: 0.0
+
+# Nombre
+Nombre:
+  MAPS: 2
+

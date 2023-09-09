@@ -4,8 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba40a215-f56c-48b4-972a-452701c0ea6e" name="Changes" comment="Mise a jour GUI">
-      <change afterPath="$PROJECT_DIR$/server/crash-reports/crash-2023-09-05_21.02.40-server.txt" afterDir="false" />
+    <list default="true" id="ba40a215-f56c-48b4-972a-452701c0ea6e" name="Changes" comment="Update Fichier">
+      <change afterPath="$PROJECT_DIR$/server/Arene1/data/raids.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/entities/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/entities/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.-1.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.-2.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.-2.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.-2.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.0.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/region/r.1.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/session.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Arene1/uid.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cache/mojang_1.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/paper-global.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/paper-world-defaults.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/crash-reports/crash-2023-08-22_23.25.48-server.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-08-26-3.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-08-28-1.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-08-29-1.log.gz" afterDir="false" />
@@ -18,25 +40,198 @@
       <change afterPath="$PROJECT_DIR$/server/logs/2023-09-04-5.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-09-04-6.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/2023-09-04-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/DutchyTpa-1.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/Naruto_Duel-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/Naruto_Duel/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/VoidGen-2.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/VoidGen/configuration.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/.unpack_finished" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/af/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ar/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ast/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/az/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ba/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/be/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/bg/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/br-FR/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/brb/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/bs/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ca/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/cs/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/cy/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/da/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/de-AT/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/de-CH/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/de/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/el/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/en-AU/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/en-CA/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/en-NZ/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/en-PT/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/en-UD/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/enp/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/eo/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/es-AR/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/es-CL/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/es-ES/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/es-MX/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/es-UY/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/es-VE/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/et/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/eu/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fa/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fi/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fil/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fo/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fr-CA/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fr/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fra-DE/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/fy-NL/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ga-IE/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/gd/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/gl/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/got/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/gv/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/haw/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/he/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/hi/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/hr/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/hu/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/hy-AM/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/id/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ido/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ig/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/is/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/it/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ja/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/jbo/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ka/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/kab/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/kk/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/kn/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ko/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ksh/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/kw/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/la-LA/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/lb/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/li/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/lol/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/lt/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/lv/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/mi/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/mk/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/mn/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/moh/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ms/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/mt/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/nds/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/nl-BE/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/nl/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/nn-NO/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/no/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/nuk/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/oc/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/oj/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/pl/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/pt-BR/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/pt-PT/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/qya-AA/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ro/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ru/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/se/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/sk/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/sl/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/so/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/sq/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/sr/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/sv-SE/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/swg/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/szl/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/ta/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/th/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/tlh-AA/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/tr/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/tt-RU/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/tzl/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/uk/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/val-ES/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/vec/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/vi/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/yi/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/yo/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/zh-CN/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/.archive-unpack/2e1dd752/zh-TW/strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/ArenaWorld.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/CorpDeKaguya.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/Hyoton.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/Kamui.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/Okasa.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/Shiki_Fujin.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/arene.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/cerveau.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/crevasse_mortelle.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/sphere_d'insecte.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/WorldEdit/schematics/tombe.schem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/bStats/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/worldedit-bukkit-7.2.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/spigot-1.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/version_history.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/versions/1.19.4/paper-1.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/wepif.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/advancements/16dd7edf-d6d4-45dc-93da-79a302840330.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/advancements/da906bb7-6102-4e80-9523-c87af2bbbeaa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/advancements/df5b00ab-19ee-3f5a-aa78-3f9d4cd7edaa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/advancements/e15be323-0a30-4235-a44c-ca369e1e1279.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/data/raids.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/paper-world.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/16dd7edf-d6d4-45dc-93da-79a302840330.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/16dd7edf-d6d4-45dc-93da-79a302840330.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/42382a7e-d146-306a-8643-d052e006060a.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/42382a7e-d146-306a-8643-d052e006060a.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/da906bb7-6102-4e80-9523-c87af2bbbeaa.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/da906bb7-6102-4e80-9523-c87af2bbbeaa.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/df5b00ab-19ee-3f5a-aa78-3f9d4cd7edaa.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/df5b00ab-19ee-3f5a-aa78-3f9d4cd7edaa.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/e15be323-0a30-4235-a44c-ca369e1e1279.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/playerdata/e15be323-0a30-4235-a44c-ca369e1e1279.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/region/r.-2.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/region/r.-2.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/session.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/stats/16dd7edf-d6d4-45dc-93da-79a302840330.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/stats/da906bb7-6102-4e80-9523-c87af2bbbeaa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/stats/df5b00ab-19ee-3f5a-aa78-3f9d4cd7edaa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/stats/e15be323-0a30-4235-a44c-ca369e1e1279.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/data/raids.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/session.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/data/raids_end.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/paper-world.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/commands/CommandDuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/listener/Player/LeavePlayerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/listener/Player/LeavePlayerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/rôle/Naruto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/picsou/narutoduel/components/rôle/Naruto.java" afterDir="false" />
     </list>
-    <list id="17337f0f-7759-4217-8f4c-8e69e09db3a8" name="Changes by Ahix" comment="">
+    <list id="17337f0f-7759-4217-8f4c-8e69e09db3a8" name="Changes by Ahix" comment="Fichier manquant">
       <change beforePath="$PROJECT_DIR$/server/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/spigot.yml" afterDir="false" />
     </list>
-    <list id="181dfcba-b150-47ad-b3d9-fac5559d4f73" name="Changes by loulo" comment="Changes by loulo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,22 +281,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/Naruto_Duel/server&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/IdeaProjects/Naruto_Duel/server",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="fr.picsou.narutoduel" />
@@ -232,8 +428,27 @@
       <option name="project" value="LOCAL" />
       <updated>1693939904968</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ajout ROLE">
+      <option name="closed" value="true" />
+      <created>1693943642882</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693943642882</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -243,6 +458,9 @@
     <MESSAGE value="DODO Evan" />
     <MESSAGE value="Update server" />
     <MESSAGE value="Mise a jour GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour GUI" />
+    <MESSAGE value="Ajout ROLE" />
+    <MESSAGE value="Fichier manquant" />
+    <MESSAGE value="Update Fichier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Fichier" />
   </component>
 </project>
