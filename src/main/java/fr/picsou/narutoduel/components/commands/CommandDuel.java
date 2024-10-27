@@ -4,34 +4,29 @@ import fr.picsou.narutoduel.Main;
 import fr.picsou.narutoduel.components.Gui.GuiBuilder;
 import fr.picsou.narutoduel.components.Gui.GuiManager;
 import fr.picsou.narutoduel.components.Items.ItemBuilder;
-import fr.picsou.narutoduel.components.list.PlayerInDuel;
-import fr.picsou.narutoduel.components.rôle.Naruto;
+import fr.picsou.narutoduel.components.role.Naruto.Naruto;
+import fr.picsou.narutoduel.components.role.Sakura.Sakura;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
+import org.apache.commons.lang.BitField;
 import org.apache.commons.lang.StringUtils;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
-
-import java.awt.*;
 
 public class CommandDuel implements CommandExecutor {
     FileConfiguration config = Main.getInstance().getConfig();
@@ -63,6 +58,7 @@ public class CommandDuel implements CommandExecutor {
             if (strings[0].equals("accept")) {
                 if (Main.getInstance().getDuelRequest().containsKey(player)) {
                     Player opponent = Main.getInstance().getDuelRequest().get(player);
+                    player.setMaxHealth(20);
                     player.setHealth(20);
                     player.setFoodLevel(20);
                     player.setSaturation(10);
@@ -70,7 +66,7 @@ public class CommandDuel implements CommandExecutor {
                     player.setFallDistance(0F);
                     for (PotionEffect effect : player.getActivePotionEffects())
                         player.removePotionEffect(effect.getType());
-
+                    player.setMaxHealth(20);
                     opponent.setHealth(20);
                     opponent.setFoodLevel(20);
                     opponent.setSaturation(10);
@@ -125,6 +121,11 @@ public class CommandDuel implements CommandExecutor {
                         guiManager.addMenu(RoleGUI);
                         guiManager.open(player, CommandDuel.RoleGUI.class);
                         guiManager.open(opponent, CommandDuel.RoleGUI.class);
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200,254));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 200,127));
+                        opponent.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200,254));
+                        opponent.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 200,127));
+
 
                         return false;
                     } else {
@@ -193,13 +194,19 @@ public class CommandDuel implements CommandExecutor {
         public void contents(Player player, Inventory inv) throws Exception {
             Naruto naruto = new Naruto();
             inv.setItem(0, naruto.gethead());
+            Sakura sakura = new Sakura();
+            inv.setItem(1, sakura.gethead());
         }
 
         @Override
         public void onClick(Player player, Inventory inv, ItemStack current, int slot, ClickType action) {
             Naruto naruto = new Naruto();
+            Sakura sakura = new Sakura();
             if(slot == 0) {
                 naruto.setrole(player);
+                player.closeInventory();
+            }if(slot == 1) {
+                sakura.setrole(player);
                 player.closeInventory();
             }
         }

@@ -21,13 +21,14 @@ public class DeathPlayerListener implements Listener {
     public void OnPlayerDeath(PlayerDeathEvent event) {
         event.setDeathMessage(null);
         Player player = event.getEntity();
-        player.getInventory().clear();
+        event.getDrops().clear();
 
         if(player.getKiller().isOnline()) {
             Player killer = player.getKiller();
             killer.getInventory().clear();
             Main.getInstance().getPlayerInDuel().remove(player);
             killer.teleport(new Location(Bukkit.getWorld("world"), -6.50, 88, -1.50));
+            killer.setMaxHealth(20);
             killer.setHealth(20);
             killer.setSaturation(20);
             killer.setFoodLevel(20);
